@@ -23,7 +23,6 @@ class Artist
   end 
   
   def songs 
-    #singer.songs #=> give me all the songs by that artist 
     Song.all.select do |song|
       song.artist == self 
     end 
@@ -35,7 +34,6 @@ class Artist
   end 
   
   def print_songs 
-    #singer.print_songs #=> prints all the singer's songs 
     songs.each do |song|
       puts song.name  
     end 
